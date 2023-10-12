@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1{
+    margin-bottom: 20px;
+    background-color: #191915;
+    color: #fffdd0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+h2{
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #191915;
+    font-weight: normal;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+    margin-bottom: 4px;
+    padding: 8px;
+    font-size: 20px;
+    width: 100%;
+    resize: none;
+    color: #191915;
+    
+}
+
+button {
+    background-color: #191915;
+    color: #fffdd0;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-style: italic;
+}
+
+button:hover {
+    background-color: #20201b;
+}
+
+.mensagem-nome-valido {
+    background-color: #536c35 ;
+    color:#fffdd0 ;
+    padding: 16px;
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    display: none;
+}
+
+.mensagem-nome-invalido {
+    background-color: #6c3535 ;
+    color:#fffdd0 ;
+    padding: 16px;
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    display: none;
+}
+
+.mensagem-numero-valido {
+    background-color: #536c35 ;
+    color:#fffdd0 ;
+    padding: 16px;
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    display: none;
+}
+
+.mensagem-numero-invalido {
+    background-color: #6c3535 ;
+    color:#fffdd0 ;
+    padding: 16px;
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    display: none;
+}

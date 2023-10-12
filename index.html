@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrando HTML com JavaScript</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Integrando HTML com JavaScript</h1>
+        <h2>Formulário</h2>
+        <form id="formProposta">
+            <label for="nomeCompleto">Nome Completo</label>
+            <input id="nomeCompleto" type="text" required placeholder="Digite Seu Nome Completo" />
+            <label for="propostaMinima">Proposta Valor Mínimo</label>
+            <input id="propostaMinima" type="number" required placeholder="Digite Sua Proposta Mínima" />
+            <label for="maximoProposta">Proposta Valor Máximo</label>
+            <input id="maximoProposta" type="number" required placeholder="Digite Sua Proposta Máxima" />
+            <label for="comentario">Comentário</label>
+            <textarea id="comentario">Escreva Seu Comentário</textarea>
+            <button type="submit">ENVIAR</button>
+        </form>
+        <p class="mensagem-nome-valido"></p>
+        <p class="mensagem-nome-invalido"></p>
+        <p class="mensagem-numero-valido"></p>
+        <p class="mensagem-numero-invalido"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
