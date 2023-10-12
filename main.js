@@ -10,12 +10,15 @@ function validaNome(fullName) {
     return nomeComoArray.length >= 2;
 }
 
-function validaProposta( numA, numB ){
+function validaProposta(numA, numB) {
     return numB > numA
 }
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
+
+    const numA = parseFloat(numeroA.value);
+    const numB = parseFloat(numeroB.value);
 
     const mensagemNomeValido = `O nome <b>${nome_inteiro.value}</b> é válido!`
     const mensagemNomeInvalido = `O nome <b>${nome_inteiro.value}</b> é inválido!`
@@ -23,7 +26,7 @@ form.addEventListener('submit', function (e) {
     const mensagemNumeroInvalido = `A proposta mínima de  <b>${numeroA.value}</b> e máxima de <b>${numeroB.value}</b> é inválido!`
 
     nomeRegistrado = validaNome(nome_inteiro.value);
-    numerosValidados = validaProposta(numeroA.value , numeroB.value);
+    numerosValidados = validaProposta(numA, numB);
 
     if (nomeRegistrado) {
         const containerNome = document.querySelector('.mensagem-nome-valido');
@@ -76,7 +79,7 @@ form.addEventListener('submit', function (e) {
         const numA = parseInt(e.target.value);
         const numB = parseInt(numeroB.value);
         numerosValidados = validaProposta(numA, numB);
-    
+
         if (!numerosValidados) {
             numeroA.style.border = '1px solid red';
             numeroB.style.border = '1px solid red';
@@ -87,12 +90,12 @@ form.addEventListener('submit', function (e) {
             document.querySelector('.mensagem-numero-invalido').style.display = 'none';
         }
     });
-    
+
     numeroB.addEventListener('change', function (e) {
         const numA = parseInt(numeroA.value);
         const numB = parseInt(e.target.value);
         numerosValidados = validaProposta(numA, numB);
-    
+
         if (!numerosValidados) {
             numeroA.style.border = '1px solid red';
             numeroB.style.border = '1px solid red';
