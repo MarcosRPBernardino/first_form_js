@@ -11,7 +11,7 @@
     width: 100%;
 }
 
-h1{
+h1 {
     margin-bottom: 20px;
     background-color: #191915;
     color: #fffdd0;
@@ -20,7 +20,7 @@ h1{
     font-weight: normal;
 }
 
-h2{
+h2 {
     margin-bottom: 15px;
     font-size: 30px;
     color: #191915;
@@ -38,7 +38,7 @@ button {
     width: 100%;
     resize: none;
     color: #191915;
-    
+
 }
 
 button {
@@ -55,8 +55,8 @@ button:hover {
 }
 
 .mensagem-nome-valido {
-    background-color: #536c35 ;
-    color:#fffdd0 ;
+    background-color: #536c35;
+    color: #fffdd0;
     padding: 16px;
     font-size: 20px;
     margin-top: 15px;
@@ -65,8 +65,8 @@ button:hover {
 }
 
 .mensagem-nome-invalido {
-    background-color: #6c3535 ;
-    color:#fffdd0 ;
+    background-color: #6c3535;
+    color: #fffdd0;
     padding: 16px;
     font-size: 20px;
     margin-top: 15px;
@@ -75,8 +75,8 @@ button:hover {
 }
 
 .mensagem-numero-valido {
-    background-color: #536c35 ;
-    color:#fffdd0 ;
+    background-color: #536c35;
+    color: #fffdd0;
     padding: 16px;
     font-size: 20px;
     margin-top: 15px;
@@ -85,8 +85,8 @@ button:hover {
 }
 
 .mensagem-numero-invalido {
-    background-color: #6c3535 ;
-    color:#fffdd0 ;
+    background-color: #6c3535;
+    color: #fffdd0;
     padding: 16px;
     font-size: 20px;
     margin-top: 15px;
